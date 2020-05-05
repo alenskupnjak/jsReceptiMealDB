@@ -30,4 +30,12 @@ class UI {
 
     this.recepti.innerHTML = this.htmlTxt;
   }
+
+
+  popuniRecept(ID){
+    console.log(ID);
+    
+
+  }
+
 }
