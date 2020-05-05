@@ -14,6 +14,7 @@ body {
   max-width: 900px;
   margin: auto;
   background: #c8e6c9;
+  overflow: hidden;
 }
 
 header {
@@ -21,29 +22,61 @@ header {
   text-align: center;
   align-items: center;
   justify-content: center;
+  height: 5vh;
+}
+
+.unos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 10vh;
+}
+
+#trazim {
+  height: 50px;
+  width: 300px;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.3rem;
+  /* margin-top: 1rem; */
+  border: none;
 }
 
 .primary-btn {
+  background: #333;
+  color: #fff;
   padding: 0.5rem;
   border: none;
   border-radius: 3px;
+  /* margin: 2rem; */
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 100px;
+}
+
+.primary-btn:hover {
+  background: greenyellow;
+  color: #333;
 }
 
 .recepti {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
+  width: 100%;
   justify-content: center;
   text-align: center;
   align-items: center;
   cursor: pointer;
   margin-bottom: 0.5rem;
+  overflow: hidden;
+  margin: auto;
 }
 
-.recepti-pojedniacno{
+.recepti-pojedniacno {
   position: relative;
   padding: 0.2rem;
-  border: 1px solid blue;
 }
 
 .recepti-pojedniacno .info {
@@ -54,11 +87,11 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: 1.2rem;
   /* važno je staviti width + height!!*/
   width: 100%;
   height: 100%;
   color: #fff;
-  color: red;
   transition: opacity 1s ease-in;
   opacity: 0;
 }
@@ -81,7 +114,9 @@ header {
   justify-content: center;
   align-items: center;
   padding: 0.3rem;
+  width: 100%;
 }
+
 
 
 
@@ -104,6 +139,14 @@ header {
   padding: 0.3rem;
 }
 
+.instrukcije {
+  background: red !important;
+  color: red;
+  width: 80%;
+  padding: 1rem;
+  border: #333 solid;
+}
+
 .namirnice p {
   display: inline-block;
   padding: 0.5rem;
@@ -111,5 +154,35 @@ header {
   margin: 0.3rem;
   border-radius: 5px;
   font-size: 1.2rem;
+  /* width: 100%; */
   /* font-weight: bold; */
+}
+
+@media(max-width:500px) {
+
+  
+  .namirnice p {
+    width: 85%;
+  }
+
+  .unos {
+    flex-direction: column;
+    height: 25vh;
+  }
+  
+  #trazim {
+    height: 30px;
+    width: 90%;
+    /* margin: auto; */
+  }
+  .recepti {
+    grid-template-columns: 1fr 1fr ;
+    gap: 5px;
+  }
+
+  .primary-btn {
+
+    margin: 2rem;
+  }
+  
 }

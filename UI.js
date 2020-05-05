@@ -53,6 +53,9 @@ class UI {
       <h2>${data.strMeal}</h2>
       <img src="${data.strMealThumb}" alt="">
     </div>
+    <div class"instrukcije">
+      <p>${data.strInstructions}</p>
+    </div>
     <div id="namirnice" class="namirnice">
       ${namirnice.map(data => {
         return `<p>${data}</p>`
