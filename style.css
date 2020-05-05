@@ -28,3 +28,16 @@ header {
   border: none;
   border-radius: 3px;
 }
+
+.recepti {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.recepti-pojedniacno{
+border: 1px solid blue;
+}
+.recepti-pojedniacno img {
+  width: 200px;
+}
