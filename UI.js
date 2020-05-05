@@ -6,6 +6,8 @@ class UI {
   }
 
   popuniPretrazeno(data){
+    this.recepti.innerHTML='';
+    this.htmlTxt = '';
     data.meals.map(element => {
       this.htmlTxt += `<div class="recepti-pojedniacno" id="${element.idMeal}">
         <img src="${element.strMealThumb}" alt="">
@@ -52,6 +54,7 @@ class UI {
       <p>${data.strInstructions}</p>
     </div>
     <div id="namirnice" class="namirnice">
+      <h2>Namirnice</h2>
       ${namirnice.map(data => {
         return `<p>${data}</p>`
       }).join('')}

@@ -10,20 +10,23 @@ const trazim = document.getElementById('trazim')
 
 
 function dohvatiPodatke() {
+
+  // Počisti podatke za pojedinacin recept i sa liste recepata
+  ekran.jedanRecept.innerHTML = '';
+
   // Pretrazujemo bazu prema upitu i vracamo podatke
   const podaci = podaciAPI.premaOpisuAPI(trazim.value)
   podaci.then(data =>{
+
     // Popuni UI
     ekran.popuniPretrazeno(data);
 
-    // Pocisti podatke za pojedinacin recept
-    ekran.jedanRecept.innerHTML = '';
   })
   
 }
 
 function dodajRecept(e) {
-
+  
   // tratim iz patha dom element sa ID stavkom
   let lista = e.path.find( data => {
     return data.classList.contains('recepti-pojedniacno')
@@ -44,12 +47,13 @@ function dodajRecept(e) {
       // }
   })
 
+
   // Povuci podatke za odabrani recept
   podaciAPI.jedanRecept(lista.getAttribute('ID'))
   .then(data => {
+    
     // Popuni ekran sa odabranim receptom
     ekran.popuniRecept(data);
-    
   })
   
 };
@@ -59,4 +63,3 @@ function dodajRecept(e) {
 pretrazi.addEventListener('click', dohvatiPodatke);
 ekran.recepti.addEventListener('click',dodajRecept);
 
-// komentar

@@ -142,6 +142,7 @@ header {
   justify-content: center;
   width: 180px;
   padding: 0.3rem;
+  border-radius: 10px;
 }
 
 /* .instrukcije {
@@ -161,6 +162,13 @@ header {
   font-size: 1.2rem;
   /* width: 100%; */
   /* font-weight: bold; */
+}
+
+.namirnice h2 {
+  border-top: #333 dotted 1px;
+  padding: 1rem;
+  width: 90%;
+  margin: auto;
 }
 
 @media(max-width:500px) {
