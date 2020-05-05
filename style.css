@@ -81,12 +81,22 @@ header {
   margin-bottom: 0.5rem;
   overflow: hidden;
   margin: auto;
+
 }
 
 .recepti-pojedniacno {
   position: relative;
-  padding: 0.2rem;
+  padding: 0.1rem;
+  transition: all 0.5s;
+  border: 2px solid #fff;
 }
+
+.recepti-pojedniacno:hover {
+  transform: scale(1.3);
+  z-index: 1;
+}
+
+
 
 .recepti-pojedniacno .info {
   position: absolute;
@@ -107,12 +117,23 @@ header {
 
 .recepti-pojedniacno .info:hover  {
   opacity: 1;
+  transform: scale(1.1);
 }
 
 
 .recepti-pojedniacno img {
   width: 200px;
 }
+
+.recepti-pojedniacno img {
+  width: 200px;
+}
+
+.recepti-pojedniacno img:hover {
+  transform: scale(1.1);
+}
+
+
 
 .jedanRecept {
   display: flex;
