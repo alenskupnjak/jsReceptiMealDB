@@ -72,3 +72,10 @@ header {
 .recepti-pojedniacno img {
   width: 200px;
 }
+
+.jedanRecept {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}

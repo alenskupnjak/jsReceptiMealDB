@@ -21,9 +21,8 @@ function dohvatiPodatke() {
 }
 
 function dodajRecept(e) {
-  console.log(e);
-  console.log(e.path);
 
+  // tratim iz patha dom element sa ID stavkom
   let lista = e.path.find( data => {
     return data.classList.contains('recepti-pojedniacno')
       // if(data.classList) {
@@ -43,8 +42,15 @@ function dodajRecept(e) {
       // }
   })
 
-  // Popuni ekran sa odabranim receptom
-  ekran.popuniRecept(lista.getAttribute('ID'));
+  // Povuci podatke za odabrani recept
+  podaciAPI.jedanRecept(lista.getAttribute('ID'))
+  .then(data => {
+    console.log(data);
+    // Popuni ekran sa odabranim receptom
+    ekran.popuniRecept(data);
+    
+  })
+
   
 
   

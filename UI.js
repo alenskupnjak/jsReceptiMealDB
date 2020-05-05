@@ -1,6 +1,7 @@
 class UI {
   constructor() {
     this.recepti = document.getElementById('recepti')
+    this.jedanRecept  = document.getElementById('jedanRecept')
     this.htmlTxt = ''
   }
 
@@ -32,9 +33,23 @@ class UI {
   }
 
 
-  popuniRecept(ID){
-    console.log(ID);
+  popuniRecept(data){
+    let namirnice = [];
+    console.log(data);
+    // console.log(data.meals[0][strIngredient8]);
+    let polje = Object.entries(data.meals[0]);
+
+
+
     
+
+
+    this.jedanRecept.innerHTML= `
+    <h2>${data.meals[0].strMeal}</h2>
+    <div id="namirnice" class="bamirnice">
+      <p>Namirmice</p>
+    </div>
+    `;
 
   }
 
