@@ -36,18 +36,27 @@ class UI {
   popuniRecept(data){
     let namirnice = [];
     console.log(data);
-    // console.log(data.meals[0][strIngredient8]);
-    let polje = Object.entries(data.meals[0]);
+    console.log(data.idMeal);
+    console.log(data['idMeal']);
 
+    for(let i=1; i<20; i++) {
+      if(data[`strIngredient${i}`]) {
+        namirnice.push(data[`strIngredient${i}`]+' - ' + data[`strMeasure${i}`]);
+      }
+    }
 
-
+    console.log(namirnice);
     
 
-
     this.jedanRecept.innerHTML= `
-    <h2>${data.meals[0].strMeal}</h2>
-    <div id="namirnice" class="bamirnice">
-      <p>Namirmice</p>
+    <div class="opis">
+      <h2>${data.strMeal}</h2>
+      <img src="${data.strMealThumb}" alt="">
+    </div>
+    <div id="namirnice" class="namirnice">
+      ${namirnice.map(data => {
+        return `<p>${data}</p>`
+      }).join('')}
     </div>
     `;
 

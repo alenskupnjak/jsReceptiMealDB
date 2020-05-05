@@ -16,6 +16,9 @@ function dohvatiPodatke() {
     console.log(data);
     // Popuni UI
     ekran.popuniPretrazeno(data);
+
+    // Pocisti podatke za pojedinacin recept
+    ekran.jedanRecept.innerHTML = '';
   })
   
 }

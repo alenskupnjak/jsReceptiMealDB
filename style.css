@@ -37,6 +37,7 @@ header {
   text-align: center;
   align-items: center;
   cursor: pointer;
+  margin-bottom: 0.5rem;
 }
 
 .recepti-pojedniacno{
@@ -78,4 +79,37 @@ header {
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+}
+
+
+
+.jedanRecept .opis{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.jedanRecept .opis h2{
+  margin-right: 6rem;
+}
+
+.jedanRecept img{
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  padding: 0.3rem;
+}
+
+.namirnice p {
+  display: inline-block;
+  padding: 0.5rem;
+  background: #fff;
+  margin: 0.3rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  /* font-weight: bold; */
 }
