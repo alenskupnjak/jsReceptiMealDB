@@ -1,6 +1,6 @@
 class UI {
   constructor() {
-    this
+    this.trazi = document.getElementById('pretrazi')
   }
 
 
