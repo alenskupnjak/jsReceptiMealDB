@@ -41,10 +41,7 @@ header {
   text-align: center;
   height: 50px;
   width: 300px;
-  /* border-radius: 5px; */
-  /* padding: 1rem; */
   font-size: 1.3rem;
-  /* margin-top: 1rem; */
   border: none;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -75,8 +72,8 @@ header {
 .recepti {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 3px;
-  width: 100%;
+  gap: 2px;
+  width: 98%;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -137,23 +134,23 @@ header {
 }
 
 .jedanRecept .opis h2{
-  margin-right: 6rem;
+  margin-right: 3rem;
 }
 
 .jedanRecept img{
   display: flex;
   justify-content: center;
-  width: 200px;
+  width: 180px;
   padding: 0.3rem;
 }
 
-.instrukcije {
+/* .instrukcije {
   background: red !important;
   color: red;
   width: 80%;
   padding: 1rem;
   border: #333 solid;
-}
+} */
 
 .namirnice p {
   display: inline-block;
@@ -174,12 +171,7 @@ header {
   }
 
 
-  
-  #trazim {
-    /* height: 30px; */
-    /* width: 90%; */
-    /* margin: auto; */
-  }
+
   .recepti {
     grid-template-columns: 1fr 1fr ;
     gap: 5px;

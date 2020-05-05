@@ -32,12 +32,9 @@ class UI {
     this.recepti.innerHTML = this.htmlTxt;
   }
 
-
+  // Popunjvanje dom sa podacima iz recepta
   popuniRecept(data){
     let namirnice = [];
-    console.log(data);
-    console.log(data.idMeal);
-    console.log(data['idMeal']);
 
     for(let i=1; i<20; i++) {
       if(data[`strIngredient${i}`]) {
@@ -45,9 +42,7 @@ class UI {
       }
     }
 
-    console.log(namirnice);
-    
-
+  
     this.jedanRecept.innerHTML= `
     <div class="opis">
       <h2>${data.strMeal}</h2>

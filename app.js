@@ -13,7 +13,6 @@ function dohvatiPodatke() {
   // Pretrazujemo bazu prema upitu i vracamo podatke
   const podaci = podaciAPI.premaOpisuAPI(trazim.value)
   podaci.then(data =>{
-    console.log(data);
     // Popuni UI
     ekran.popuniPretrazeno(data);
 
@@ -48,14 +47,10 @@ function dodajRecept(e) {
   // Povuci podatke za odabrani recept
   podaciAPI.jedanRecept(lista.getAttribute('ID'))
   .then(data => {
-    console.log(data);
     // Popuni ekran sa odabranim receptom
     ekran.popuniRecept(data);
     
   })
-
-  
-
   
 };
 
