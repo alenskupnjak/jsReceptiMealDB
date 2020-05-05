@@ -23,36 +23,48 @@ header {
   align-items: center;
   justify-content: center;
   height: 5vh;
+  font-size: 1.1rem;
+  padding: 0.2rem;
+  margin: 0.4rem;
 }
 
 .unos {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   text-align: center;
   height: 10vh;
+  margin: auto;
 }
 
 #trazim {
+  text-align: center;
   height: 50px;
   width: 300px;
-  border-radius: 5px;
-  padding: 1rem;
+  /* border-radius: 5px; */
+  /* padding: 1rem; */
   font-size: 1.3rem;
   /* margin-top: 1rem; */
   border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .primary-btn {
+  border: none;
   background: #333;
   color: #fff;
   padding: 0.5rem;
   border: none;
-  border-radius: 3px;
   /* margin: 2rem; */
+  height: 50px;
+  width: 50px;
   font-size: 1.2rem;
   font-weight: bold;
-  width: 100px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  outline: none;
+  /* width: 100px;  */
 }
 
 .primary-btn:hover {
@@ -63,7 +75,7 @@ header {
 .recepti {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 3px;
   width: 100%;
   justify-content: center;
   text-align: center;
@@ -101,8 +113,6 @@ header {
 }
 
 
-
-
 .recepti-pojedniacno img {
   width: 200px;
 }
@@ -116,8 +126,6 @@ header {
   padding: 0.3rem;
   width: 100%;
 }
-
-
 
 
 .jedanRecept .opis{
@@ -165,14 +173,11 @@ header {
     width: 85%;
   }
 
-  .unos {
-    flex-direction: column;
-    height: 25vh;
-  }
+
   
   #trazim {
-    height: 30px;
-    width: 90%;
+    /* height: 30px; */
+    /* width: 90%; */
     /* margin: auto; */
   }
   .recepti {
@@ -180,9 +185,4 @@ header {
     gap: 5px;
   }
 
-  .primary-btn {
-
-    margin: 2rem;
-  }
-  
 }

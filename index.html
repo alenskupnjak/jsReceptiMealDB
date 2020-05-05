@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/165d179615.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="style.css">
   <title>Pretraživanje recepata</title>
 </head>
@@ -12,8 +14,8 @@
   </header>
   <div class="container">
     <div class="unos">
-      <input type="text" id="trazim">
-      <button type="submit" id="pretrazi" class="primary-btn">Traži</button>
+      <input type="text" id="trazim" value="beef">
+      <button type="submit" id="pretrazi" class="primary-btn"><i class="fas fa-search fa-1.5x"></i></button>
     </div>
     <section id="recepti" class="recepti">
 
@@ -27,10 +29,6 @@
     </section>
 
     <section id="jedanRecept" class="jedanRecept">
-      <h2>Opis</h2>
-      <div id="namirnice" class="bamirnice">
-        <p>Namirmice</p>
-      </div>
     </section>
     
   </div>
