@@ -24,3 +24,5 @@ function dohvatiPodatke() {
 
 // dodaj event lisener
 pretrazi.addEventListener('click', dohvatiPodatke)
+
+// komentar
