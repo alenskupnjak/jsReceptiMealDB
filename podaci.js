@@ -11,6 +11,7 @@ class PodaciApi {
       return data
     })
     .then( data =>{
+      
        return data
     })
 
