@@ -15,8 +15,13 @@ function dohvatiPodatke() {
   
   console.log(event);
 
+  // Pretrazujemo bazu prema upitu i vracamo podatke
   const podaci = podaciAPI.premaOpisuAPI(trazim.value)
-  console.log(podaci);
+  podaci.then(data =>{
+    console.log(data);
+    // Popuni UI
+    ekran.popuniPretrazeno(data);
+  })
   
   
 }

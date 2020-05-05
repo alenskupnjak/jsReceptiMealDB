@@ -5,7 +5,7 @@ class PodaciApi {
 
   // Dohvati podatke prema opisu
   async premaOpisuAPI (data) {
-    await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${data}`)
+    const podatak = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${data}`)
     .then(data => {
       console.log(data);
       data = data.json();
@@ -13,16 +13,18 @@ class PodaciApi {
       return data
     })
     .then( data =>{
+      console.log('kaj sada');
+      
       console.log(data);
-       data
+       return data
     })
 
+    console.log(podatak);
+    
 
 
 
-    return 'miki'
-
-
-
+    return podatak
+    
   }
 }
