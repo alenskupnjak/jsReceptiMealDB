@@ -33,17 +33,18 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  cursor: pointer;
 }
 
-.recepti-pojedniacno{
+.recepti-pojedniacno {
   position: relative;
   padding: 0.2rem;
   border: 1px solid blue;
 }
+
+.recepti-pojedniacno img {
+width: 200px;
+}
+
 
 .recepti-pojedniacno .info {
   position: absolute;
@@ -64,11 +65,4 @@ header {
 
 .recepti-pojedniacno .info:hover  {
   opacity: 1;
-}
-
-
-
-
-.recepti-pojedniacno img {
-  width: 200px;
 }

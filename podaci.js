@@ -14,8 +14,6 @@ class PodaciApi {
        return data
     })
 
-    
-
 
 
     return podatak
