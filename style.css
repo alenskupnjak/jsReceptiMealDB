@@ -11,6 +11,20 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
+  background: #c8e6c9;
+}
+
+header {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary-btn {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 3px;
 }
