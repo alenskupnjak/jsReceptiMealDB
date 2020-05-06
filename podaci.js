@@ -26,6 +26,6 @@ class PodaciApi {
     .then( data =>{      
        return data.meals[0]
     })
-    return podatak
+    return podatak;
   }
 }

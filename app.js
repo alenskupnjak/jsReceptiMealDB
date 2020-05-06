@@ -5,8 +5,8 @@ const podaciAPI = new PodaciApi();
 const ekran = new UI();
 
 
-const pretrazi = document.getElementById('pretrazi')
-const trazim = document.getElementById('trazim')
+const pretrazi = document.getElementById('pretrazi');
+const trazim = document.getElementById('trazim');
 
 
 function dohvatiPodatke() {
@@ -18,18 +18,17 @@ function dohvatiPodatke() {
   const podaci = podaciAPI.premaOpisuAPI(trazim.value)
   podaci.then(data =>{
 
-    // Popuni UI
-    ekran.popuniPretrazeno(data);
+  // Popuni UI
+  ekran.popuniPretrazeno(data);
 
   })
-  
 }
 
 function dodajRecept(e) {
   
   // tratim iz patha dom element sa ID stavkom
   let lista = e.path.find( data => {
-    return data.classList.contains('recepti-pojedniacno')
+    return data.classList.contains('recepti-pojedniacno');
       // if(data.classList) {
 
       //     return data.classList.contains('recepti-pojedniacno')
@@ -38,8 +37,10 @@ function dodajRecept(e) {
       //   }
       //   console.log('da');
       //   return '';
+      console.log('dd');
+      
 
-
+      TODO
       // } else {
       //   return data.classList.contains('recepti-pojedniacno')
       //   return ''
