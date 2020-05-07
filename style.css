@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: #fff;
@@ -81,7 +80,6 @@ header {
   margin-bottom: 0.5rem;
   overflow: hidden;
   margin: auto;
-
 }
 
 .recepti-pojedniacno {
@@ -95,8 +93,6 @@ header {
   transform: scale(1.3);
   z-index: 1;
 }
-
-
 
 .recepti-pojedniacno .info {
   position: absolute;
@@ -115,11 +111,10 @@ header {
   opacity: 0;
 }
 
-.recepti-pojedniacno .info:hover  {
+.recepti-pojedniacno .info:hover {
   opacity: 1;
   transform: scale(1.1);
 }
-
 
 .recepti-pojedniacno img {
   width: 200px;
@@ -133,8 +128,6 @@ header {
   transform: scale(1.1);
 }
 
-
-
 .jedanRecept {
   display: flex;
   flex-direction: column;
@@ -145,8 +138,7 @@ header {
   width: 100%;
 }
 
-
-.jedanRecept .opis{
+.jedanRecept .opis {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -154,11 +146,11 @@ header {
   padding: 1rem;
 }
 
-.jedanRecept .opis h2{
+.jedanRecept .opis h2 {
   margin-right: 3rem;
 }
 
-.jedanRecept img{
+.jedanRecept img {
   display: flex;
   justify-content: center;
   width: 180px;
@@ -192,18 +184,13 @@ header {
   margin: auto;
 }
 
-@media(max-width:500px) {
-
-  
+@media (max-width: 500px) {
   .namirnice p {
     width: 85%;
   }
 
-
-
   .recepti {
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     gap: 5px;
   }
-
 }
