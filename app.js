@@ -1,7 +1,7 @@
 // Inicijaliziraj API
 const podaciAPI = new PodaciApi();
 
-//Inicijalizacija grafike
+// Inicijalizacija grafike
 const ekran = new UI();
 
 const pretrazi = document.getElementById('pretrazi');
@@ -20,26 +20,15 @@ function dohvatiPodatke() {
 }
 
 function dodajRecept(e) {
-  // tratim iz patha dom element sa ID stavkom
+  console.log(e.path);
+  
+  // trazim iz patha dom element sa ID stavkom
   let lista = e.path.find((data) => {
     return data.classList.contains('recepti-pojedniacno');
-    // if(data.classList) {
-
-    //     return data.classList.contains('recepti-pojedniacno')
-    //   if (data.classList.contains('recepti-pojedniacno')) {
-    //     return data
-    //   }
-    //   console.log('da');
-    //   return '';
-    console.log('dd');
-
-    TODO;
-    // } else {
-    //   return data.classList.contains('recepti-pojedniacno')
-    //   return ''
-    //   console.log('ne');
-    // }
   });
+
+  console.log('lista=',lista);
+  
 
   // Povuci podatke za odabrani recept
   podaciAPI.jedanRecept(lista.getAttribute('ID')).then((data) => {
@@ -48,6 +37,7 @@ function dodajRecept(e) {
   });
 }
 
+// EVENT liseneri
 // dodaj event lisener
 pretrazi.addEventListener('click', dohvatiPodatke);
 ekran.recepti.addEventListener('click', dodajRecept);

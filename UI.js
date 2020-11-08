@@ -19,21 +19,10 @@ class UI {
      `;
     });
 
-    // data.meals.forEach(element => {
-    //   this.htmlTxt +=`
-    //     <div class="recepti-pojedniacno" id="${element.idMeal}">
-    //       <img src="${element.strMealThumb}" alt="">
-    //       <div class="info">
-    //       <h2>${element.strMeal}</h2>
-    //       <p>${element.strCategory}</p>
-    //       </div>
-    //      </div>
-    //    `;
-    // });
-
     this.recepti.innerHTML = this.htmlTxt;
   }
 
+  // ********************************
   // Popunjvanje dom sa podacima iz recepta
   popuniRecept(data) {
     let namirnice = [];
